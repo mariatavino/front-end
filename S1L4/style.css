@@ -1,0 +1,187 @@
+/* IMPOSTAZIONI GENERALI */
+html{font-size: 62.5%;}
+body{
+    font-family: 'Poppins','Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url(sfondo.png);
+    background-position: center center;
+}
+hr{visibility: hidden;}
+*{
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header{
+    background: #03738C;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(3,115,140,1) 0%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: aliceblue;
+     box-shadow: 0 3px 3px , black;
+     margin-bottom: 1.5em;
+    padding: 2em 1.5em;   
+}
+img{
+    margin-bottom: 20px;
+}
+nav>ul{
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+/* MAIN */
+main{
+    background-color: white;
+    box-shadow: 0 3px 3px , black;
+    padding: 2em 1em;
+    margin-bottom: 1.5em;
+}
+section{
+    background-color: gainsboro;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+h1{
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+}
+p,address,ul,ol{
+    margin-bottom: 1em;
+}
+h1+p{
+    color: darkgrey;
+}
+ul,ol{
+    margin-left: 2em;
+}
+ul{
+list-style-type: disc;
+}
+
+ol{
+list-style-type: decimal;
+}
+
+a{
+    color: rgb(5, 171, 183);
+    font-weight: bold;
+}
+strong{
+    color: #AA2072;
+    font-weight: bold;
+}
+code,aside div{
+    background-color: gainsboro;
+    border-color: darkgray;
+    border-style: solid;
+    border: 1px;
+}
+
+code{
+    border-radius: 6px;
+}
+
+iframe{
+    width: max-content;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 3px;
+}
+
+/* TABELLE */
+
+table{
+    margin-bottom: 1.5em;
+}
+
+caption{
+    font-weight: bold;
+    font-style: italic;
+}
+
+table thead tr{
+    background-color: blue;
+    color: white;
+}
+
+th,td{
+    padding: 10px 10px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr{
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+}
+tbody tr:nth-of-type(even){
+    background-color: lightyellow;
+}
+tbody tr:last-of-type{
+    border-bottom: blue;
+    border-style: solid;
+    border: 2px;
+}
+
+/* FORM */
+
+input{
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px;
+    border-color: black;
+    border-style: dashed;
+}
+button{
+    padding: 5px 10px;
+    border: 0;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+aside div p:last-child{
+    margin-bottom: 0;
+    font-size: small;
+    text-align: right;
+}
+
+/* FOOTER */
+footer{
+    background-color:#03738C;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(3,115,140,1) 0%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 3px 3px black;
+    color: gainsboro;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+ 
+footer a {
+    color: fuchsia;
+}
