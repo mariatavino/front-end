@@ -1,0 +1,178 @@
+
+html, body{
+    max-width: 500px;
+}
+
+body{
+    text-align: center;
+    color: #393d41;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    
+}
+p{
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.TitoloBlu_h1{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 560;
+    line-height: 1.5;
+    font-size: xx-large;   
+    margin-top: 10px; 
+    padding: 20px;
+}
+
+.TitoloBlu{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.TitoloBianco{
+    color: white;
+    font-weight: bold;
+}
+
+footer{
+    color: #c8e7f0;
+    background-color:#25a2c3 ;
+    height: 300px;
+}
+footer div a{
+    color: #c8e7f0;
+}
+
+header{
+    background-color: black;
+}
+header figure img{
+    width: 32.5%;
+    height: 32.5%;
+    padding-bottom: 30px;
+}
+
+
+nav input{
+    background-color:#f04c2f;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    border-radius: 5px;
+    border-style: none;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+aside a{
+    border: 1px, #dee1e3; 
+}
+
+header div{
+    background-image:url("../images/banner.jpg");
+    background-size:contain;
+
+    width: auto;
+    height: 300px;
+  
+}
+
+article figure img {
+    border-radius: 50%;
+    padding-top: 40px;
+}
+
+article div{
+    display: inline-block;
+    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 40px;
+    max-width: 500px;
+    background-color: #e22d0e;
+    color: white;
+    margin-top: 45.5px;
+}
+
+.TitoloCitazione{
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+}
+.citazione{
+    margin-top: 20px;
+    font-style: italic;
+    font-size: medium;
+    margin-bottom: 40px;
+}
+.sottotitolocit{
+    margin-top: 0px;;
+    font-size: small;
+    margin-bottom: 40px;
+}
+
+main a:link {
+    text-decoration: none;
+    color: #393d41 ;
+  }
+  
+main a:visited {
+    text-decoration: none;
+    color: #393d41 ;
+}
+
+footer a:link{
+    color: #c8e7f0;
+}
+
+footer a:visited{
+    color: #c8e7f0;
+}
+
+footer i{
+    color: white;
+}
+
+aside a div{
+    border: solid 1px #dee1e3;
+    margin: 50px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: inline-block;
+    width: 400px;
+}
+
+aside a div p{
+    padding: 20px;
+}
+
+.immaginiSchede{
+    display: block;
+    padding-bottom: 20px;
+    position: center top;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+hr{
+    max-width: 250px;
+}
+
+.TitoloBiancoFooter{
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
