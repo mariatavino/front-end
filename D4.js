@@ -42,7 +42,7 @@ function boundary(n) {
 */
 
 function epify(a) {
-    return a.indexOf("EPICODE",0) ? a : a.concat("EPICODE");
+    return a = a.split(" ").at(0)=="EPICODE" ? a : "EPICODE " + a;
 }
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
