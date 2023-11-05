@@ -42,8 +42,10 @@ function boundary(n) {
 */
 
 function epify(a) {
-    return a = a.split(" ").at(0)=="EPICODE" ? a : "EPICODE " + a;
+   return  a.split(" ").at(0)=="EPICODE" ? a : "EPICODE " + a;
+    
 }
+console.log(epify("mio dio santissimo"));
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
@@ -139,61 +141,119 @@ console.log(checkArray(giveMeRandom(4)));
  Crea una funzione chiamata "shoppingCartTotal" che calcola il totale dovuto al negozio (tenendo conto delle quantità di ogni oggetto).
 */
 
-
-
-
+let shoppingCart = [{"price":0 , "name":0 , "id":0 , "quantity":0}];
+function shoppingCartTotal(shoppingCart) {
+    let totale = 0;
+    for (let i = 0; i < shoppingCart.length; i++) {
+        totale += shoppingCart[i].price*shoppingCart[i].quantity;
+    }    
+    return totale;
+}
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "addToShoppingCart" che riceve un nuovo oggetto dello stesso tipo, lo aggiunge a "shoppingCart" e ritorna il nuovo numero totale degli elementi.
 */
+let newObject = {"price":0 , "name":0 , "id":0 , "quantity":0};
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function addToShoppingCart(newObject) {
+    shoppingCart.push(newObject);
+    return shoppingCart.length;
+}
 
 /* EXTRA 4
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "maxShoppingCart" che riceve l'array "shoppingCart" e ritorna l'oggetto più costoso in esso contenuto.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function maxShoppingCart(shoppingCart) {
+    let max = shoppingCart[0];
+    for (let i = 1; i < shoppingCart.length; i++) {
+        if(shoppingCart[i].price > max) 
+            max = shoppingCart[i].price;
+    }
+    return max;
+}
 
 /* EXTRA 5
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function latestShoppingCart(shoppingCart) {
+    let ultimo = shoppingCart[shoppingCart.length-1];
+   // return ultimo.pop();
+     return ultimo;
+}
 
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
-*/
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+function loopUntil(x) { 
+    let counter = 0;
+    while(true){
+        let pippo = Math.abs(parseInt(Math.random()*10-1));
+        if(pippo > x) counter++;
+        if(counter == 3) {
+            console.log("Siamo usciti con "+pippo);
+            break;
+        }
+        console.log(pippo);
+    }
+}
+*/
 
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+let lista = [3,4,5,6,7,1,5,9,"baldracca",4];
+function average(lista) {
+    let i = 0, qt = 0, somma = 0;
+    while (i < lista.length) {
+        if(!isNaN(lista[i])){
+            somma += lista[i];
+            qt++
+        }
+        i++;
+    }
+    return somma/qt;
+}
+console.log(average(lista));
 
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function longest(a) {
+    let max = a[0]
+    for (let i = 1; i < a.length; i++) {
+        if(a[i].length > max.length) max = a[i];
+    }
+    return max;
+}
 
 /* EXTRA 9
  Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
  La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+function anti_spam(emailContent) {
+return emailContent.search(/SPAM/i) == -1 && emailContent.search(/SCAM/i) == -1 ;
+}
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
 */
+function dateDiff(a) {
+    let inizio = new Date(a), oggi = new Date();
+    let data1= inizio.getTime();
+    let data2= oggi.getTime();
+    let millToDays= 1000 * 60 * 60 * 24;
+    let diff = (data2 - data1);
+    return Math.round(diff/millToDays);
+  }
+  console.log(dateDiff('10/31/2023'));
 
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come parametri due numeri interi, "x" e "y".
@@ -203,4 +263,15 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
  "10","11","12"]
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function matrixGenerator(x,y) {
+    let matrix = new Array(y);
+    let add=0;
+    for (let i = 0; i < y; i++) {
+        matrix[i] = new Array(x);
+        for(let j = 0; j < x ; j++){
+            matrix[i][j] = (i.toString() + j.toString());
+        }
+    }
+return matrix;
+}
+console.log(matrixGenerator(3,4));
