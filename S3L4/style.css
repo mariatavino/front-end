@@ -67,10 +67,11 @@ img{
     height: 15em;
 }
 #bottone{
-    backface-visibility: hidden;
-  position: relative;
-  margin-left: 1.5em;
-  margin-top: 1.5em;
+  backface-visibility: hidden;
+  position: absolute;
+  margin-left: 6em;
+  margin-top: 3.7em;
+  margin-bottom: 0.5em;
   width: 5em;
   height: 5em;
   cursor: pointer;
@@ -110,34 +111,60 @@ li{
     text-align: center;
     display: inline;
     list-style:none;
-    padding: 0em;
+    padding: 1em;
+    
+}
+nav div{
+    text-align: center;
+    font-size: medium;
+    font-weight: 700;
+    color: #000;
+    display: inline-block;
+    padding-left: 16em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+#coda{
+    display:inline-block;
+    position: relative;
+    padding-left: 4em;
+    padding-bottom: 0em;
+    padding-top: 0.7em;
+
+}
+.li{
+    display: inline-block;
+    padding: 1em;
     margin-left: 1em;
-    margin-right: 4em;
+    margin-bottom: 0;
+    background-color: #979191;
+    border-radius: 0.5em;
+    position: relative;
+    width: 3.5em;
+    height: 3.5em;
 }
 #tabellone{
-    height:60vh;
+    height: 45vh;
     border-radius: 2.2em;
 }
 aside::after{
     height: 75vh;
 }
 .tombola{ 
-    margin: 1em;
+    margin: 0.5em;
+    margin-left: 1em;
     display: inline-block;
     width: 57.5vw;
-    height: 50vh;
+    height: 45vh;
     border-style: solid;
     border-radius: 1em;
-    padding: 0.5em;
+    padding: 0.3em;
     position: relative;
     background-color: rgb(183, 184, 185);
 }
-#coda{
-    display: inline-block;
-    width: 30vw;
-}
 thead{
-    height: 9vh;
+    height: 7vh;
+    padding-left: 3em;
     display: table-caption;
     text-align: center;
     font-size: x-large;
@@ -147,7 +174,7 @@ thead{
     width: 57vw;
     text-align: center;
     font-size: larger;
-    height: 9vh;
+    height: 7.5vh;
     border:#ddd;
     border-width: 3px;
     border-style: solid;
@@ -160,20 +187,37 @@ aside{
    display: inline-block;
     text-align: center;
     position: absolute;
-    border-radius: 2em;
+    border-radius: 1em;
     margin-left: 1em;
     width: 35vw;
     height: 75vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+aside::-webkit-scrollbar {
+  width: 15px;
+}
+
+aside::-webkit-scrollbar-track {
+  background: none;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #c31313;
+  border-radius: 100px;
+  border: 3px double #006b07;
 }
 #Tavolo{
     display: inline;
     width: 50vw;
     height: 45vh;
     padding: 0;
+    
 }
 .cartelle{
     display: inline-table;
-    width: fit-content;
+    width: max-content;
     height: fit-content;
     position:relative;
     border: #a5a5a5;
