@@ -1,6 +1,20 @@
 let estratti = [];
 let nome_giocatore = undefined;
 let cliccato = false;
+let coda = [0,0,0,0,0];
+let li = document.getElementsByClassName("li");
+
+function Coda (estratto){
+  for (let i = 4; i >= 1; i--) {
+    coda[i] = coda[i-1];
+  }
+  coda[0] = estratto;
+  for (let j = 0; j <5 ; j++) {
+      li[j].textContent = coda[j]
+  }
+}
+
+
 
 function impostaNome() {
   nome_giocatore = prompt("NOME GIOCAOTRE");
@@ -18,6 +32,7 @@ function genera() {
   estratti.push(rand); //aggiungo il numero estratto nell'array estratti
   goToTombola(rand); //vado ad evidenziare nella tabella il numero estratto
   goToCartelle(rand); //vado a controllare se il numero estratto è in una delle cartelle
+  Coda(rand);
   return rand;
 }
 
@@ -88,6 +103,7 @@ const crea_cartella = function () {
 const aggiungi_cartella = function () {
     let piu = document.getElementById("piu");
     piu.addEventListener("click", crea_cartella);
+    piu.addEventListener("click", numero_cartelle);
 };
 
 const elimina_cartella = function() {
@@ -98,11 +114,16 @@ else alert("Nessuna Cartella Da Rimuore");
 
 }
 const rimuovi_cartella = function () {
-    let piu = document.getElementById("meno");
-    piu.addEventListener("click", elimina_cartella);
+    let meno = document.getElementById("meno");
+    meno.addEventListener("click", elimina_cartella); 
+    meno.addEventListener("click" , numero_cartelle);
 };
 
-
+const numero_cartelle = function() {
+    let Cartelle = document.getElementsByClassName("cartelle").length;
+    let p = document.getElementById("nCartelle");
+    p.textContent = Cartelle;
+}
 
 const crea_tombola = function () {
   let container = document.getElementById("tabellone");
@@ -172,6 +193,7 @@ function __init__() {
   crea_tombola();
   aggiungi_cartella();
   rimuovi_cartella();
+  numero_cartelle();
 }
 
 __init__();
