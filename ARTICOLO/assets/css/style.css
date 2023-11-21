@@ -636,9 +636,13 @@ header {
     padding: 0.5em;
 }
 header div {
-    position:absolute;
+    text-align: center;
+    position:relative;
+    display: inline-block;
+    height: fit-content;
 }
 header div img {
+    position: relative;
     float: inline-start;
     display: block;
     height: 10vh;
@@ -646,15 +650,14 @@ header div img {
     padding: 0%;
 }
 header p {
+    width: fit-content;
+    position: relative;
     display: inline-block;
-    margin: 0;
-    margin-top: 0.8em;
-    padding: 0;
+    margin-top: 0.55em;
 }
 header nav {
     display: inline;
     float: right;
-    margin-top: 0.8em;
     margin-right: 1.5em;
     
 }
@@ -841,5 +844,92 @@ footer a {
 }
 }
 
-
+@media print {
+    /* HEADER */
+    body { 
+        font-family: Poppins, 'Helvetica Neue', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5em;
+        padding: 20px 80px;
+        background-image: url('../img/sfondo.png');
+        background-position: center center;
+    }
+    header {
+      visibility: hidden;
+      position: absolute;
+    }
     
+    /* MAIN */
+    main {
+        background-color: #fff;
+        box-shadow: 0 3px 3px #444;
+        padding: 2em 2em;
+        margin-bottom:1.5em ;
+    }
+    
+    /* ELEMENTI NEL MAIN - ARTICLE */
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: -0.03em;
+        margin-bottom: 0.7em;
+    }
+
+    h1 + p {
+        color: #a0a0a0;
+    }
+    ul, ol {
+        margin-left: 2em;
+    }
+    a {
+        color: #00A0C6;
+        font-weight: bold;
+    }
+    strong {
+        color: #a02571;
+        font-weight: bold;
+    }
+    code {
+        background-color: #e3e3e3;
+        border: 1px solid #969494;
+        border-radius: 5px;
+    }
+    
+    section, iframe, #articoli, aside, footer{
+        visibility: hidden;
+      position: absolute;
+    }
+    
+    /* TABELLE */
+    table {
+        margin-top: 3em;
+        text-align: center;
+        margin-bottom: 4em;
+        width: 80%;
+        margin-left: 10%;
+    }
+    caption {
+        font-weight: bold;
+        font-style: italic;
+    }
+    thead tr {
+        background-color: #3f6bca;
+        color: #ffffff;
+    }
+    th, td {
+        padding: 12px 15px;
+        vertical-align: bottom;
+        text-align: center;
+    }
+    tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    tbody tr:last-of-type {
+        border-bottom: 2px solid #3f6bca;
+    }
+}
