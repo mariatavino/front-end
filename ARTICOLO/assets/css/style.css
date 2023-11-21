@@ -374,7 +374,7 @@ body {
 header {
     display: inline-block;
     width: 100%;
-    height: 14vh;
+    height:13vh;
     background: rgb(0,160,198);
     background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
     text-align: left;
@@ -391,6 +391,7 @@ header div {
 header div img {
     float: inline-start;
     display: block;
+    height: 10vh;
     margin: 0;
     padding: 0%;
 }
