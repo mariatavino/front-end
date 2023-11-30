@@ -1,0 +1,11 @@
+// Crea classi per i bottoni
+
+@each $button, $color in $button-colors {
+  .#{$button} {
+    background-color: $color;
+    color: #fff;
+  }
+}
+
+
+  

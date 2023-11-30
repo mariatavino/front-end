@@ -1,0 +1,19 @@
+// Crea classi di spaziatura
+$spacing-sizes: (sm, normal, md, lg, xl, xxl);
+$spacing-directions: (block, inline);
+
+@each $size in $spacing-sizes {
+  @each $direction in $spacing-directions {
+    .padding-#{$direction}-#{$size} {
+      padding-#{$direction}: map-get(('sm': 0.5em, 'normal': 1em, 'md': 1.5em, 'lg': 2em, 'xl': 2.5em, 'xxl': 3em), $size);
+    }
+
+    .margin-#{$direction}-#{$size} {
+      margin-#{$direction}: map-get(('sm': 0.5em, 'normal': 1em, 'md': 1.5em, 'lg': 2em, 'xl': 2.5em, 'xxl': 3em), $size);
+    }
+  }
+}
+
+  
+
+  

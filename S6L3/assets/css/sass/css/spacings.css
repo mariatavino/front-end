@@ -1,0 +1,95 @@
+.padding-block-sm {
+  padding-block: 0.5em;
+}
+
+.margin-block-sm {
+  margin-block: 0.5em;
+}
+
+.padding-inline-sm {
+  padding-inline: 0.5em;
+}
+
+.margin-inline-sm {
+  margin-inline: 0.5em;
+}
+
+.padding-block-normal {
+  padding-block: 1em;
+}
+
+.margin-block-normal {
+  margin-block: 1em;
+}
+
+.padding-inline-normal {
+  padding-inline: 1em;
+}
+
+.margin-inline-normal {
+  margin-inline: 1em;
+}
+
+.padding-block-md {
+  padding-block: 1.5em;
+}
+
+.margin-block-md {
+  margin-block: 1.5em;
+}
+
+.padding-inline-md {
+  padding-inline: 1.5em;
+}
+
+.margin-inline-md {
+  margin-inline: 1.5em;
+}
+
+.padding-block-lg {
+  padding-block: 2em;
+}
+
+.margin-block-lg {
+  margin-block: 2em;
+}
+
+.padding-inline-lg {
+  padding-inline: 2em;
+}
+
+.margin-inline-lg {
+  margin-inline: 2em;
+}
+
+.padding-block-xl {
+  padding-block: 2.5em;
+}
+
+.margin-block-xl {
+  margin-block: 2.5em;
+}
+
+.padding-inline-xl {
+  padding-inline: 2.5em;
+}
+
+.margin-inline-xl {
+  margin-inline: 2.5em;
+}
+
+.padding-block-xxl {
+  padding-block: 3em;
+}
+
+.margin-block-xxl {
+  margin-block: 3em;
+}
+
+.padding-inline-xxl {
+  padding-inline: 3em;
+}
+
+.margin-inline-xxl {
+  margin-inline: 3em;
+}/*# sourceMappingURL=spacings.css.map */

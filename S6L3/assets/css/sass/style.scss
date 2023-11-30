@@ -1,0 +1,33 @@
+// Import dei parziali
+@import "partials/reset";
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/spacings";
+@import "partials/buttons";
+@import "partials/mixins";
+@import "partials/animation";
+
+body {
+  font-family: $main-font;
+  color: $main-text-color;
+  @include hero-animation(polpo,0.8s, 0.2s, -20, 0)
+}
+
+#Hero{
+  background-color: $hero-bg-color;
+  color: azure;
+  &text{
+    font-family: $second-font;
+  }
+  &img{
+    @include floating()
+  }
+}
+
+#Griglia{
+  @include grid(2)
+}
+
+.Grigliaimg{
+  @include floating($shadow: 0 5px 6px rgba(5, 4, 4, 0.776), $border: none )
+}

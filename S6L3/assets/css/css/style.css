@@ -1,0 +1,207 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+}
+
+.padding-block-sm {
+  padding-block: 0.5em;
+}
+
+.margin-block-sm {
+  margin-block: 0.5em;
+}
+
+.padding-inline-sm {
+  padding-inline: 0.5em;
+}
+
+.margin-inline-sm {
+  margin-inline: 0.5em;
+}
+
+.padding-block-normal {
+  padding-block: 1em;
+}
+
+.margin-block-normal {
+  margin-block: 1em;
+}
+
+.padding-inline-normal {
+  padding-inline: 1em;
+}
+
+.margin-inline-normal {
+  margin-inline: 1em;
+}
+
+.padding-block-md {
+  padding-block: 1.5em;
+}
+
+.margin-block-md {
+  margin-block: 1.5em;
+}
+
+.padding-inline-md {
+  padding-inline: 1.5em;
+}
+
+.margin-inline-md {
+  margin-inline: 1.5em;
+}
+
+.padding-block-lg {
+  padding-block: 2em;
+}
+
+.margin-block-lg {
+  margin-block: 2em;
+}
+
+.padding-inline-lg {
+  padding-inline: 2em;
+}
+
+.margin-inline-lg {
+  margin-inline: 2em;
+}
+
+.padding-block-xl {
+  padding-block: 2.5em;
+}
+
+.margin-block-xl {
+  margin-block: 2.5em;
+}
+
+.padding-inline-xl {
+  padding-inline: 2.5em;
+}
+
+.margin-inline-xl {
+  margin-inline: 2.5em;
+}
+
+.padding-block-xxl {
+  padding-block: 3em;
+}
+
+.margin-block-xxl {
+  margin-block: 3em;
+}
+
+.padding-inline-xxl {
+  padding-inline: 3em;
+}
+
+.margin-inline-xxl {
+  margin-inline: 3em;
+}
+
+.button-color1 {
+  background-color: #ff8700;
+  color: #fff;
+}
+
+.button-color2 {
+  background-color: #0e6cff;
+  color: #fff;
+}
+
+.button-color3 {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #4f4f4f;
+  animation: polpo 0.8s ease 0.2s;
+}
+@keyframes polpo {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#Hero {
+  background-color: #640fc5;
+  color: azure;
+}
+#Herotext {
+  font-family: "Nova Square", arial;
+}
+#Heroimg {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.808);
+  border: 2px solid #f4f2f2;
+}
+
+#Griglia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2em;
+}
+#Griglia > * {
+  flex-basis: calc(90% / 2);
+  margin: 1em;
+}
+
+.Grigliaimg {
+  border-radius: 10px;
+  box-shadow: 0 5px 6px rgba(5, 4, 4, 0.776);
+  border: none;
+}/*# sourceMappingURL=style.css.map */

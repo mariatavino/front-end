@@ -1,0 +1,20 @@
+// Mixin per lo stile di sollevamento
+@mixin floating($radius: 10px, $shadow: 0 3px 10px rgba(0, 0, 0, 0.808), $border: 2px solid #f4f2f2) {
+    border-radius: $radius;
+    box-shadow: $shadow;
+    border: $border;
+  }
+  
+  // Mixin per la griglia
+  @mixin grid($elements-per-line) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2em;
+    
+    & > * {
+      flex-basis: calc(90% / #{$elements-per-line});
+      margin: 1em;
+    }
+  }
+  
